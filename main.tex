@@ -1,0 +1,97 @@
+% main.tex - Main resume file that imports all sections
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{changepage}
+\usepackage{xcolor}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+% Define colors
+\definecolor{maincolor}{HTML}{414141}
+\definecolor{secondarycolor}{HTML}{343434}
+\definecolor{accentcolor}{HTML}{3968CB} % A blue accent color
+
+% Setup hyperref package
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accentcolor,
+    filecolor=accentcolor,      
+    urlcolor=accentcolor,
+    pdftitle={Resume},
+    pdfpagemode=FullScreen,
+}
+
+% Section formatting
+\titleformat{\section}{
+    \vspace{-8pt}\scshape\raggedright\large\color{maincolor}
+}{}{0em}{}[\color{secondarycolor}\titlerule \vspace{-5pt}]
+
+% Custom commands for section entries
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemWithDescription}[2]{
+  \item\small{
+    \textbf{#1 }{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+\item\small{
+ \parbox[t]{0.91\textwidth}{#1 \vspace{-2pt}}
+ }
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Document Start
+\begin{document}
+
+% Import header with name and contact information
+\input{sections/header}
+
+% Import other sections
+\input{sections/education}
+\input{sections/experience}
+\input{sections/projects}
+\input{sections/skills}
+
+\end{document}
