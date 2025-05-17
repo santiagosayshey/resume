@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Create build directory
         run: mkdir -p build
@@ -27,7 +27,7 @@ jobs:
         run: cp build/main.pdf ./main.pdf
           
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Resume
           path: build/main.pdf
