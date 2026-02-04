@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Samuel Chau's CV
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Samuel Chau's CV</h1>
+        <ul>
+        <li>Phone: +61 413 867 624</li>
+        <li>Email: <a href="mailto:schau22@pm.me">schau22@pm.me</a></li>
+        <li>Location: Adelaide, SA</li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/samuel-chau-7324a0305">samuel-chau-7324a0305</a></li>
+        <li>GitHub: <a href="https://github.com/santiagosayshey">santiagosayshey</a></li>
+        </ul>
+        <h1>Education</h1>
+        <h2>University of Adelaide, Bachelor in Computer Science, Major in Cybersecurity</h2>
+        <ul>
+        <li>Feb 2022 – Dec 2025</li>
+        <li>Adelaide, SA</li>
+        <li>GPA: <strong>6.4/7.0</strong> — Achieved 13 High Distinctions</li>
+        <li>Top Results: Databases &amp; Ethical Data (96), Web &amp; Database Computing (95), Algorithm &amp; Data Structure Analysis (93), Software Engineering &amp; Project (92)</li>
+        </ul>
+        <h1>Experience</h1>
+        <h2>Profilarr (<a href="https://github.com/Dictionarry-Hub">GitHub</a>, <a href="https://dictionarry.dev/">Website</a>), Founder &amp; Lead Developer</h2>
+        <ul>
+        <li>Apr 2023 – present</li>
+        <li>Open-source configuration management tool for media server automation. Syncs version-controlled profiles to Radarr/Sonarr, preserves user customizations across upstream updates, and minimizes merge conflicts. Built with <strong>SvelteKit</strong> and <strong>Deno</strong>.</li>
+        <li>Scaled to <strong>1.6M+ downloads</strong>, <strong>30,000+ active users</strong>, and <strong>1,800+ GitHub stars</strong>. Built active community with <strong>1,500+ Discord members</strong> contributing bug reports, feature requests, and documentation.</li>
+        <li>Designed <strong>OSQL</strong> (Operational SQL)—an append-only format where databases are stored as replayable SQL operations rather than state. User customizations stored as discrete operations with value hashes, so changes to different fields never conflict. Enables git-native version control without specialized tooling. Built <strong>rosettarr</strong> and <strong>trash-conv</strong> migration tools.</li>
+        <li>Integrated testing system using actual Radarr/Sonarr C# parser code extracted as a microservice—validates custom formats against real parsing logic, not approximations. Regex testing via regex101 API with immutable versioned IDs.</li>
+        <li>Ecosystem includes documentation site (Svelte), Discord bot with bidirectional GitHub issue sync (TypeScript), database schema specification, and wiki with technical articles on encoding efficiency and quality metrics.</li>
+        </ul>
+        <h1>Projects</h1>
+        <h2>Synapsis (<a href="https://github.com/SynapsisAI">GitHub</a>)</h2>
+        <ul>
+        <li>React, Express, LLMs, FFmpeg</li>
+        <li>Built full-stack platform using Grobid for paper parsing, LLMs for summarization/image generation, and FFmpeg for video synthesis.</li>
+        <li>Pitched at <strong>Tech eChallenge</strong> startup competition; ranked <strong>Top 5</strong> out of 50+ teams.</li>
+        </ul>
+        <h2>OMesh (<a href="https://github.com/santiagosayshey/OMesh">GitHub</a>)</h2>
+        <ul>
+        <li>Python, Docker, WebSockets</li>
+        <li>Built end-to-end encrypted messaging platform using low-level socket programming and custom protocol design.</li>
+        <li>Implemented RSA/AES-GCM cryptographic pipeline for secure key exchange and message encryption.</li>
+        <li>Deployed multi-server architecture with Docker Compose; real-time communication via WebSockets.</li>
+        </ul>
+        <h2>Rogue (<a href="https://github.com/santiagosayshey/Rogue">GitHub</a>)</h2>
+        <ul>
+        <li>C++, SFML</li>
+        <li>Built turn-based roguelike with procedural map generation and entity component system architecture.</li>
+        <li>Implemented design patterns (Factory, Observer, State) for extensible game object behavior.</li>
+        </ul>
+        <h1>Skills</h1>
+        <ul>
+        <li>Languages: TypeScript, Python, C++, C#, SQL, HTML/CSS</li>
+        <li>Technologies: SvelteKit, Deno, Docker, Git, Linux, SQLite, Discord.js, FFmpeg</li>
+        <li>Practices: GitOps, Event Sourcing, API Design, Open Source Development</li>
+        <li>Interests: Self-Hosting &amp; Homelabs, Basketball, Technical Writing</li>
+        </ul>
+    </article>
+</body>
+
+</html>
