@@ -1,58 +1,40 @@
-# LaTeX Resume
+# Resume
 
-A version-controlled LaTeX resume with modular sections.
+A version-controlled resume built with [RenderCV](https://github.com/rendercv/rendercv).
 
 ## Structure
 
-This resume is organized into separate files for easy maintenance:
-
-- `main.tex` - The primary file that imports all sections
-- `sections/` - Directory containing separate section files:
-  - `education.tex` - Academic background
-  - `experience.tex` - Work and professional experience
-  - `projects.tex` - Course and personal projects
-  - `skills.tex` - Technical and soft skills
+```
+resume/
+├── resume.yaml          # Resume content + design settings
+└── rendercv_output/     # Generated files
+    ├── *.pdf            # Final PDF
+    ├── *.html           # HTML version
+    ├── *.md             # Markdown version
+    └── *.png            # Page previews
+```
 
 ## Setup
 
 ### Requirements
 
-- LaTeX distribution (TeX Live, MiKTeX, etc.)
-- LaTeX packages:
-  - fullpage
-  - titlesec
-  - marvosym
-  - color
-  - verbatim
-  - enumitem
-  - hyperref
-  - fancyhdr
-  - babel
-  - tabularx
-  - fontawesome5
-  - multicol
-  - graphicx
-  - changepage
-  - xcolor
+- Python 3.12+
+- RenderCV
 
-### Compilation
-
-To compile the resume into a PDF:
+### Installation
 
 ```bash
-pdflatex main.tex
+pip install "rendercv[full]"
 ```
 
-## Customization
+## Usage
 
-- Update your personal information in the `main.tex` file
-- Modify section content in the corresponding files under `sections/`
-- Adjust colors by changing the color definitions in `main.tex`
+Edit `resume.yaml` and render:
 
-## PDF Output
+```bash
+rendercv render resume.yaml
+```
 
-The latest compiled PDF version is included in this repository for easy viewing.
+## Theme
 
-## License
-
-Feel free to use and modify this template for your personal use.
+Using the [sb2nov](https://github.com/sb2nov/resume) theme - a clean, single-column format popular for software engineering resumes.
