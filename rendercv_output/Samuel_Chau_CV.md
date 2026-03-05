@@ -22,7 +22,7 @@
 
 - Apr 2023 – present
 - Open-source configuration management tool for media server automation. Syncs version-controlled profiles to Radarr/Sonarr, preserves user customizations across upstream updates, and minimizes merge conflicts. Built with **SvelteKit** and **Deno**.
-- Scaled to **1.6M+ downloads**, **30,000+ active users**, and **1,800+ GitHub stars**. Built active community with **1,500+ Discord members** contributing bug reports, feature requests, and documentation.
+- Scaled to **2M+ downloads**, **50,000+ active users**, and **1,900+ GitHub stars**. Built active community with **1,500+ Discord members** contributing bug reports, feature requests, and documentation.
 - Designed **OSQL** (Operational SQL)—an append-only format where databases are stored as replayable SQL operations rather than state. User customizations stored as discrete operations with value hashes, so changes to different fields never conflict. Enables git-native version control without specialized tooling. Built **rosettarr** and **trash-conv** migration tools.
 - Integrated testing system using actual Radarr/Sonarr C# parser code extracted as a microservice—validates custom formats against real parsing logic, not approximations. Regex testing via regex101 API with immutable versioned IDs.
 - Ecosystem includes documentation site (Svelte), Discord bot with bidirectional GitHub issue sync (TypeScript), database schema specification, and wiki with technical articles on encoding efficiency and quality metrics.
@@ -53,4 +53,4 @@
 - Languages: TypeScript, Python, C++, C#, SQL, HTML/CSS
 - Technologies: SvelteKit, Deno, Docker, Git, Linux, SQLite, Discord.js, FFmpeg
 - Practices: GitOps, Event Sourcing, API Design, Open Source Development
-- Interests: Self-Hosting & Homelabs, Basketball, Technical Writing
+- Interests: Self-Hosting, Homelabbing, Media Archival, Basketball, Technical Writing

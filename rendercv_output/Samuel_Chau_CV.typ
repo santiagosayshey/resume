@@ -3,7 +3,7 @@
 
 #let name = "Samuel Chau"
 #let locale-catalog-page-numbering-style = context { "Samuel Chau - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Feb 2026"
+#let locale-catalog-last-updated-date-style = "Last updated in Mar 2026"
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
 #let design-colors-text = rgb(0, 0, 0)
@@ -519,7 +519,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Open-source configuration management tool for media server automation. Syncs version-controlled profiles to Radarr\/Sonarr, preserves user customizations across upstream updates, and minimizes merge conflicts. Built with #strong[SvelteKit] and #strong[Deno].],[Scaled to #strong[1.6M+ downloads], #strong[30,000+ active users], and #strong[1,800+ GitHub stars]. Built active community with #strong[1,500+ Discord members] contributing bug reports, feature requests, and documentation.],[Designed #strong[OSQL] \(Operational SQL\)—an append-only format where databases are stored as replayable SQL operations rather than state. User customizations stored as discrete operations with value hashes, so changes to different fields never conflict. Enables git-native version control without specialized tooling. Built #strong[rosettarr] and #strong[trash-conv] migration tools.],[Integrated testing system using actual Radarr\/Sonarr C\# parser code extracted as a microservice—validates custom formats against real parsing logic, not approximations. Regex testing via regex101 API with immutable versioned IDs.],[Ecosystem includes documentation site \(Svelte\), Discord bot with bidirectional GitHub issue sync \(TypeScript\), database schema specification, and wiki with technical articles on encoding efficiency and quality metrics.],)
+    #v(design-highlights-top-margin);#highlights([Open-source configuration management tool for media server automation. Syncs version-controlled profiles to Radarr\/Sonarr, preserves user customizations across upstream updates, and minimizes merge conflicts. Built with #strong[SvelteKit] and #strong[Deno].],[Scaled to #strong[2M+ downloads], #strong[50,000+ active users], and #strong[1,900+ GitHub stars]. Built active community with #strong[1,500+ Discord members] contributing bug reports, feature requests, and documentation.],[Designed #strong[OSQL] \(Operational SQL\)—an append-only format where databases are stored as replayable SQL operations rather than state. User customizations stored as discrete operations with value hashes, so changes to different fields never conflict. Enables git-native version control without specialized tooling. Built #strong[rosettarr] and #strong[trash-conv] migration tools.],[Integrated testing system using actual Radarr\/Sonarr C\# parser code extracted as a microservice—validates custom formats against real parsing logic, not approximations. Regex testing via regex101 API with immutable versioned IDs.],[Ecosystem includes documentation site \(Svelte\), Discord bot with bidirectional GitHub issue sync \(TypeScript\), database schema specification, and wiki with technical articles on encoding efficiency and quality metrics.],)
   ],
 )
 
@@ -596,7 +596,7 @@
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Interests:] Self-Hosting & Homelabs, Basketball, Technical Writing]
+  content: [#strong[Interests:] Self-Hosting, Homelabbing, Media Archival, Basketball, Technical Writing]
 )
 
 
