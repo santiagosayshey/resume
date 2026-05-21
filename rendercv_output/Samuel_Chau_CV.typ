@@ -124,7 +124,7 @@
 
 #regular-entry(
   [
-    #strong[Founder & Lead Developer]
+    #strong[Maintainer & Lead Developer]
 
   ],
   [

@@ -23,7 +23,7 @@
 
 
 # Experience
-## **Founder & Lead Developer**
+## **Maintainer & Lead Developer**
 
 *Apr 2023 – present*
 
