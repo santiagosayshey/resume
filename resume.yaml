@@ -28,7 +28,7 @@ cv:
         highlights:
           - Open-source configuration management tool for media server automation. Syncs version-controlled profiles to Radarr/Sonarr, preserves user customizations across upstream updates, and minimizes merge conflicts. Built with **SvelteKit** and **Deno**.
           - Scaled to **3.5M+ downloads**, **50,000+ active users**, and **2,300+ GitHub stars**. Built active community with **2000+ members** contributing bug reports, feature requests, and documentation.
-          - Designed **OSQL** (Operational SQL)—an append-only format where databases are stored as replayable SQL operations rather than state. User customizations stored as discrete operations with value hashes, so changes to different fields never conflict. Enables git-native version control without specialized tooling. Built **rosettarr** and **trash-conv** migration tools.
+          - Designed **OSQL** (Operational SQL)—an append-only format where databases are stored as replayable SQL operations rather than state. User customizations stored as discrete operations with value hashes, so changes to different fields never conflict. Enables git-native version control without specialized tooling.
           - Integrated testing system using actual Radarr/Sonarr C# parser code extracted as a microservice—validates custom formats against real parsing logic, not approximations. Regex testing via regex101 API with immutable versioned IDs.
           - Ecosystem includes documentation site (Svelte), Discord bot with bidirectional GitHub issue sync (TypeScript), database schema specification, and wiki with technical articles on encoding efficiency and quality metrics.
     projects:
