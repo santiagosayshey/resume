@@ -27,11 +27,11 @@
   typography-line-spacing: 0.6em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
-  typography-font-family-body: "New Computer Modern",
-  typography-font-family-name: "New Computer Modern",
-  typography-font-family-headline: "New Computer Modern",
-  typography-font-family-connections: "New Computer Modern",
-  typography-font-family-section-titles: "New Computer Modern",
+  typography-font-family-body: "Source Sans 3",
+  typography-font-family-name: "Source Sans 3",
+  typography-font-family-headline: "Source Sans 3",
+  typography-font-family-connections: "Source Sans 3",
+  typography-font-family-section-titles: "Source Sans 3",
   typography-font-size-body: 10pt,
   typography-font-size-name: 30pt,
   typography-font-size-headline: 10pt,
@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 5,
-    day: 21,
+    day: 25,
   ),
 )
 
@@ -96,6 +96,10 @@
   [#link("https://github.com/santiagosayshey", icon: false, if-underline: false, if-color: false)[github.com\/santiagosayshey]],
 )
 
+
+== Summary
+
+Computer Science graduate and software engineer who builds open-source developer tools. Creator and maintainer of Profilarr, a media-automation tool used by tens of thousands of people, with experience across full-stack web development, systems programming, and cybersecurity.
 
 == Education
 

@@ -7,6 +7,9 @@
 - GitHub: [santiagosayshey](https://github.com/santiagosayshey)
 
 
+# Summary
+Computer Science graduate and software engineer who builds open-source developer tools. Creator and maintainer of Profilarr, a media-automation tool used by tens of thousands of people, with experience across full-stack web development, systems programming, and cybersecurity.
+
 # Education
 ## **University of Adelaide**
 *Adelaide, SA*
