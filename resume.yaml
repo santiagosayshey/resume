@@ -10,6 +10,8 @@ cv:
     - network: GitHub
       username: santiagosayshey
   sections:
+    summary:
+      - Computer Science graduate and software engineer who builds open-source developer tools. Creator and maintainer of Profilarr, a media-automation tool used by tens of thousands of people, with experience across full-stack web development, systems programming, and cybersecurity.
     education:
       - institution: University of Adelaide
         area: Computer Science, Major in Cybersecurity
@@ -62,5 +64,7 @@ cv:
         details: Self-Hosting, Homelabbing, Media Archival, Basketball, Technical Writing
 design:
   theme: sb2nov
+  typography:
+    font_family: Source Sans 3
   entries:
     date_and_location_width: 6cm
