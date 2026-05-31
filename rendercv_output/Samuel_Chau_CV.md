@@ -11,15 +11,13 @@
 Computer Science graduate and maintainer of Profilarr, an open-source configuration-as-code tool for self-hosted media servers with 3.5M+ downloads and 2,400 stars. Experienced across full-stack web development (SvelteKit, Deno, TypeScript), systems programming, and cybersecurity, with a track record of designing developer tools that scale.
 
 # Education
-## **University of Adelaide**, Computer Science, Major in Cybersecurity
-
-**Bachelor**
-
-
-Adelaide, SA
+## **University of Adelaide**
+*Adelaide, SA*
 
 
-Feb 2022 – Dec 2025
+*Feb 2022 – Dec 2025*
+
+*Bachelor* *in* *Computer Science, Major in Cybersecurity*
 
 - GPA: **6.4/7.0** — Achieved 13 High Distinctions
 
@@ -28,13 +26,11 @@ Feb 2022 – Dec 2025
 
 
 # Experience
-## **[Profilarr](https://github.com/Dictionarry-Hub)**, Maintainer & Lead Developer
+## **Maintainer & Lead Developer**
 
-Apr 2023 – present
+*Apr 2023 – present*
 
-
-
-3 years 3 months
+*[Profilarr](https://github.com/Dictionarry-Hub)*
 
 Open-source tool that brings configuration-as-code to self-hosted media servers.
 
@@ -55,7 +51,7 @@ Open-source tool that brings configuration-as-code to self-hosted media servers.
 # Projects
 ## **[Synapsis](https://github.com/SynapsisAI)**
 
-React, Express, LLMs, FFmpeg
+*React, Express, LLMs, FFmpeg*
 
 AI Research Paper Video Platform
 
@@ -67,7 +63,7 @@ AI Research Paper Video Platform
 
 ## **[OMesh](https://github.com/santiagosayshey/OMesh)**
 
-Python, Docker, WebSockets
+*Python, Docker, WebSockets*
 
 Secure Messaging Platform
 
@@ -81,7 +77,7 @@ Secure Messaging Platform
 
 ## **[Rogue](https://github.com/santiagosayshey/Rogue)**
 
-C++, SFML
+*C++, SFML*
 
 Procedural Roguelike Game
 

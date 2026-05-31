@@ -17,21 +17,21 @@
   page-show-footer: true,
   page-show-top-note: true,
   colors-body: rgb(0, 0, 0),
-  colors-name: rgb(0, 79, 144),
-  colors-headline: rgb(0, 79, 144),
-  colors-connections: rgb(0, 79, 144),
-  colors-section-titles: rgb(0, 79, 144),
-  colors-links: rgb(0, 79, 144),
+  colors-name: rgb(0, 0, 0),
+  colors-headline: rgb(0, 0, 0),
+  colors-connections: rgb(0, 0, 0),
+  colors-section-titles: rgb(0, 0, 0),
+  colors-links: rgb(0, 0, 0),
   colors-footer: rgb(128, 128, 128),
   colors-top-note: rgb(128, 128, 128),
   typography-line-spacing: 0.6em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
-  typography-font-family-body: "Source Sans 3",
-  typography-font-family-name: "Source Sans 3",
-  typography-font-family-headline: "Source Sans 3",
-  typography-font-family-connections: "Source Sans 3",
-  typography-font-family-section-titles: "Source Sans 3",
+  typography-font-family-body: "Aptos",
+  typography-font-family-name: "Aptos",
+  typography-font-family-headline: "Aptos",
+  typography-font-family-connections: "Aptos",
+  typography-font-family-section-titles: "Aptos",
   typography-font-size-body: 10pt,
   typography-font-size-name: 30pt,
   typography-font-size-headline: 10pt,
@@ -45,7 +45,7 @@
   typography-bold-headline: false,
   typography-bold-connections: false,
   typography-bold-section-titles: true,
-  links-underline: false,
+  links-underline: true,
   links-show-external-link-icon: false,
   header-alignment: center,
   header-photo-width: 3.5cm,
@@ -53,27 +53,27 @@
   header-space-below-headline: 0.7cm,
   header-space-below-connections: 0.7cm,
   header-connections-hyperlink: true,
-  header-connections-show-icons: true,
-  header-connections-display-urls-instead-of-usernames: false,
-  header-connections-separator: "",
+  header-connections-show-icons: false,
+  header-connections-display-urls-instead-of-usernames: true,
+  header-connections-separator: "•",
   header-connections-space-between-connections: 0.5cm,
-  section-titles-type: "with_partial_line",
+  section-titles-type: "with_full_line",
   section-titles-line-thickness: 0.5pt,
   section-titles-space-above: 0.5cm,
   section-titles-space-below: 0.3cm,
   sections-allow-page-break: true,
   sections-space-between-text-based-entries: 0.3em,
   sections-space-between-regular-entries: 1.2em,
-  entries-date-and-location-width: 4.15cm,
+  entries-date-and-location-width: 6cm,
   entries-side-space: 0.2cm,
   entries-space-between-columns: 0.1cm,
   entries-allow-page-break: false,
-  entries-short-second-row: true,
+  entries-short-second-row: false,
   entries-degree-width: 1cm,
   entries-summary-space-left: 0cm,
   entries-summary-space-above: 0cm,
-  entries-highlights-bullet:  "•" ,
-  entries-highlights-nested-bullet:  "•" ,
+  entries-highlights-bullet:  "◦" ,
+  entries-highlights-nested-bullet:  "◦" ,
   entries-highlights-space-left: 0.15cm,
   entries-highlights-space-above: 0cm,
   entries-highlights-space-between-items: 0cm,
@@ -89,11 +89,11 @@
 = Samuel Chau
 
 #connections(
-  [#connection-with-icon("location-dot")[Adelaide, SA]],
-  [#link("mailto:schau22@pm.me", icon: false, if-underline: false, if-color: false)[#connection-with-icon("envelope")[schau22\@pm.me]]],
-  [#link("tel:+61-413-867-624", icon: false, if-underline: false, if-color: false)[#connection-with-icon("phone")[0413 867 624]]],
-  [#link("https://linkedin.com/in/samuel-chau-7324a0305", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[samuel-chau-7324a0305]]],
-  [#link("https://github.com/santiagosayshey", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[santiagosayshey]]],
+  [Adelaide, SA],
+  [#link("mailto:schau22@pm.me", icon: false, if-underline: false, if-color: false)[schau22\@pm.me]],
+  [#link("tel:+61-413-867-624", icon: false, if-underline: false, if-color: false)[0413 867 624]],
+  [#link("https://linkedin.com/in/samuel-chau-7324a0305", icon: false, if-underline: false, if-color: false)[linkedin.com\/in\/samuel-chau-7324a0305]],
+  [#link("https://github.com/santiagosayshey", icon: false, if-underline: false, if-color: false)[github.com\/santiagosayshey]],
 )
 
 
@@ -105,21 +105,22 @@ Computer Science graduate and maintainer of Profilarr, an open-source configurat
 
 #education-entry(
   [
-    #strong[University of Adelaide], Computer Science, Major in Cybersecurity
+    #strong[University of Adelaide]
 
+    #emph[Bachelor] #emph[in] #emph[Computer Science, Major in Cybersecurity]
+
+  ],
+  [
+    #emph[Adelaide, SA]
+
+    #emph[Feb 2022 – Dec 2025]
+
+  ],
+  main-column-second-row: [
     - GPA: #strong[6.4\/7.0] — Achieved 13 High Distinctions
 
     - Top Results: Databases & Ethical Data (96), Web & Database Computing (95), Algorithm & Data Structure Analysis (93), Software Engineering & Project (92)
 
-  ],
-  [
-    Adelaide, SA
-
-    Feb 2022 – Dec 2025
-
-  ],
-  degree-column: [
-    #strong[Bachelor]
   ],
 )
 
@@ -127,7 +128,15 @@ Computer Science graduate and maintainer of Profilarr, an open-source configurat
 
 #regular-entry(
   [
-    #strong[#link("https://github.com/Dictionarry-Hub")[Profilarr]], Maintainer & Lead Developer
+    #strong[Maintainer & Lead Developer]
+
+  ],
+  [
+    #emph[Apr 2023 – present]
+
+  ],
+  main-column-second-row: [
+    #emph[#link("https://github.com/Dictionarry-Hub")[Profilarr]]
 
     #summary[Open-source tool that brings configuration-as-code to self-hosted media servers.]
 
@@ -144,14 +153,6 @@ Computer Science graduate and maintainer of Profilarr, an open-source configurat
     - Grew to #strong[3.5M+ downloads and 2,400 GitHub stars]; ran all support, beta coordination, and contribution guidelines for a 2,000+ member community.
 
   ],
-  [
-    Apr 2023 – present
-
-    
-
-    3 years 3 months
-
-  ],
 )
 
 == Projects
@@ -160,15 +161,17 @@ Computer Science graduate and maintainer of Profilarr, an open-source configurat
   [
     #strong[#link("https://github.com/SynapsisAI")[Synapsis]]
 
+  ],
+  [
+    #emph[React, Express, LLMs, FFmpeg]
+
+  ],
+  main-column-second-row: [
     #summary[AI Research Paper Video Platform]
 
     - Built full-stack platform using Grobid for paper parsing, LLMs for summarization\/image generation, and FFmpeg for video synthesis.
 
     - Pitched at #strong[Tech eChallenge] startup competition; ranked #strong[Top 5] out of 50+ teams.
-
-  ],
-  [
-    React, Express, LLMs, FFmpeg
 
   ],
 )
@@ -177,6 +180,12 @@ Computer Science graduate and maintainer of Profilarr, an open-source configurat
   [
     #strong[#link("https://github.com/santiagosayshey/OMesh")[OMesh]]
 
+  ],
+  [
+    #emph[Python, Docker, WebSockets]
+
+  ],
+  main-column-second-row: [
     #summary[Secure Messaging Platform]
 
     - Built end-to-end encrypted messaging platform using low-level socket programming and custom protocol design.
@@ -186,25 +195,23 @@ Computer Science graduate and maintainer of Profilarr, an open-source configurat
     - Deployed multi-server architecture with Docker Compose; real-time communication via WebSockets.
 
   ],
-  [
-    Python, Docker, WebSockets
-
-  ],
 )
 
 #regular-entry(
   [
     #strong[#link("https://github.com/santiagosayshey/Rogue")[Rogue]]
 
+  ],
+  [
+    #emph[C++, SFML]
+
+  ],
+  main-column-second-row: [
     #summary[Procedural Roguelike Game]
 
     - Built turn-based roguelike with procedural map generation and entity component system architecture.
 
     - Implemented design patterns (Factory, Observer, State) for extensible game object behavior.
-
-  ],
-  [
-    C++, SFML
 
   ],
 )
