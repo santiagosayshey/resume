@@ -64,3 +64,9 @@ cv:
         details: GitOps, Event Sourcing, API Design, Open Source Development
       - label: Interests
         details: Self-Hosting, Homelabbing, Media Archival, Basketball, Technical Writing
+design:
+  theme: sb2nov
+  typography:
+    font_family: Aptos
+  entries:
+    date_and_location_width: 6cm
