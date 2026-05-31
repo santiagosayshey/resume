@@ -8,7 +8,7 @@
 
 
 # Summary
-Computer Science graduate and maintainer of Profilarr, an open-source media automation tool with 3.5M+ downloads and 2,400 stars. Experienced across full-stack web development (SvelteKit, Deno, TypeScript), systems programming, and cybersecurity, with a track record of designing developer tools that scale.
+Computer Science graduate and maintainer of Profilarr, an open-source configuration-as-code tool for self-hosted media servers with 3.5M+ downloads and 2,400 stars. Experienced across full-stack web development (SvelteKit, Deno, TypeScript), systems programming, and cybersecurity, with a track record of designing developer tools that scale.
 
 # Education
 ## **University of Adelaide**
@@ -32,17 +32,19 @@ Computer Science graduate and maintainer of Profilarr, an open-source media auto
 
 *Profilarr ([GitHub](https://github.com/Dictionarry-Hub), [Website](https://dictionarry.dev/))*
 
-- Self-hosted media server applications often require complex, interdependent configuration that is tedious to set up by hand and painful to keep consistent across multiple instances. Profilarr brings Terraform-style configuration-as-code practices to application-level configuration by letting users link version-controlled configuration databases, make local adjustments, and sync everything to target applications without losing local changes when upstream updates.
+Open-source tool that brings configuration-as-code to self-hosted media servers.
 
-- Designed an event-sourced data format inspired by CRDTs to solve the core problem of letting multiple parties edit the same data independently without breaking each other. Configuration is stored as a sequence of operations rather than final state — changes to different fields never conflict, and changes to the same field are detected by value guards before they can silently overwrite.
+- Designed a **CRDT-inspired, event-sourced configuration system** — config is stored as operations rather than final state, so upstream curators and local users can edit independently and merge without conflict; value guards catch same-field edits before they silently overwrite.
 
-- Built and architected a 100K+ line SvelteKit, Deno, TypeScript, and SQLite application as the sole engineer. Developed a reusable component library that enforces consistent UI patterns across the app, an interactive onboarding system that walks users through real UI elements instead of static documentation, a background job queue that recovers from crashes and process restarts, an idempotent sync engine that can be safely retried without duplicating work, drift detection that alerts users when their servers diverge from expected configuration, and schema-driven type generation that derives TypeScript interfaces directly from the database so types never fall out of sync.
+- Architected and built a **100K+ line SvelteKit/Deno/TypeScript/SQLite app solo**, including a Terraform-style sync engine (idempotent, retry-safe, with drift detection), a crash-recoverable job queue, and a fully type-safe data layer — TypeScript interfaces generated from the SQL schema and queried through Kysely, so schema, types, and queries can't fall out of sync.
 
-- Secured with a defense-in-depth approach built around the assumption that self-hosted web applications may be exposed to the internet. Rather than relying solely on authentication, the architecture removes secrets from the web-accessible surface where possible; API keys are hashed and never stored as plaintext, backup downloads strip credentials before archives reach the browser, and the filesystem remains the only trust boundary for full-fidelity data. Added independent protections for OWASP Top 10 risks, including authentication and rate limiting, sanitized markdown rendering, path traversal prevention, reverse-proxy-aware CSRF handling, and secret exposure controls.
+- Built a reusable **component library** that leverages semantic CSS tokens to create a consistently styled, themable, and polished design, enabling rapid UI development. Enforced using custom Svelte-AST lint rules that ban raw HTML and hardcoded styles.
 
-- Built a CI/CD pipeline that acts as a release safety net for a production open-source app used across heterogeneous self-hosted environments. Every code change passes build, formatting, lint, Svelte/TypeScript type checks, unit tests, Semgrep SAST, integration tests against the compiled production binary, and Playwright E2E authentication flows before release. This catches regressions in core logic, security-sensitive paths, auth/proxy behavior, and browser workflows before they reach users.
+- Designed a **defense-in-depth security model that keeps raw secrets off the web surface entirely** — authenticated or not: clients receive presence flags rather than values, the app's own API key is hashed like a password (shown once, never retrievable), and backup downloads are credential-stripped before reaching the browser, leaving the filesystem as the only trust boundary for full-fidelity data. Layered with independent OWASP Top 10 protections: sanitized markdown, path-traversal and reverse-proxy-aware CSRF handling, and persistent rate limiting.
 
-- Grew to 3.5M+ downloads, 50,000+ active users, and 2,400 GitHub stars. Published long-form dev logs and technical deep dives breaking down architecture decisions, data modeling tradeoffs, and domain concepts for a community of 2,000+ members. Handled all user support, coordinated beta releases with community tester signoff, and maintained contribution guidelines.
+- Built a **CI/CD release pipeline** running build, lint, type checks, unit + integration tests against the production binary, Semgrep SAST, and Playwright E2E auth flows on every change.
+
+- Grew to **3.5M+ downloads and 2,400 GitHub stars**; ran all support, beta coordination, and contribution guidelines for a 2,000+ member community.
 
 
 
@@ -88,7 +90,7 @@ Procedural Roguelike Game
 # Skills
 **Languages:** TypeScript, Python, C++, C#, SQL, HTML/CSS
 
-**Technologies:** SvelteKit, Deno, Docker, Git, Linux, SQLite, Discord.js, FFmpeg
+**Technologies:** SvelteKit, Deno, Docker, Git, Linux, SQLite, Kysely, Discord.js, FFmpeg
 
 **Practices:** GitOps, Event Sourcing, API Design, Open Source Development
 
