@@ -90,10 +90,10 @@ Procedural Roguelike Game
 
 
 # Skills
-**Languages:** TypeScript, Python, C++, C#, SQL, HTML/CSS
+**Languages:** TypeScript, JavaScript, Python, C++, C#, SQL, HTML/CSS
 
-**Technologies:** SvelteKit, Deno, Docker, Git, Linux, SQLite, Kysely, Discord.js, FFmpeg
+**Technologies:** SvelteKit, Deno, SQLite, Kysely, Tailwind, Docker, GitHub Actions, Playwright, Semgrep, Git, Linux
 
-**Practices:** GitOps, Event Sourcing, API Design, Open Source Development
+**Practices:** CI/CD, Event Sourcing, Configuration-as-Code, Secure Development, Automated Testing, API Design, Open Source Development
 
 **Interests:** Self-Hosting, Homelabbing, Media Archival, Basketball, Technical Writing

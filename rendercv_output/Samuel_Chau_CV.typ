@@ -220,10 +220,10 @@ Computer Science graduate and lead maintainer of Profilarr, an open-source confi
 
 == Skills
 
-#strong[Languages:] TypeScript, Python, C++, C\#, SQL, HTML\/CSS
+#strong[Languages:] TypeScript, JavaScript, Python, C++, C\#, SQL, HTML\/CSS
 
-#strong[Technologies:] SvelteKit, Deno, Docker, Git, Linux, SQLite, Kysely, Discord.js, FFmpeg
+#strong[Technologies:] SvelteKit, Deno, SQLite, Kysely, Tailwind, Docker, GitHub Actions, Playwright, Semgrep, Git, Linux
 
-#strong[Practices:] GitOps, Event Sourcing, API Design, Open Source Development
+#strong[Practices:] CI\/CD, Event Sourcing, Configuration-as-Code, Secure Development, Automated Testing, API Design, Open Source Development
 
 #strong[Interests:] Self-Hosting, Homelabbing, Media Archival, Basketball, Technical Writing
