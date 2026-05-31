@@ -99,7 +99,7 @@
 
 == Summary
 
-Computer Science graduate and maintainer of Profilarr, an open-source configuration-as-code tool for self-hosted media servers with 3.5M+ downloads and 2,400 stars. Experienced across full-stack web development (SvelteKit, Deno, TypeScript), systems programming, and cybersecurity, with a track record of designing developer tools that scale.
+Computer Science graduate and lead maintainer of Profilarr, an open-source configuration-as-code tool for self-hosted media servers (3.5M+ downloads, 2,400 stars). Full-stack web developer with a strong frontend sensibility, seeking frontend or full-stack roles building products people actually like using.
 
 == Education
 
@@ -142,11 +142,13 @@ Computer Science graduate and maintainer of Profilarr, an open-source configurat
 
     - Designed a #strong[CRDT-inspired, event-sourced configuration system] — config is stored as operations rather than final state, so upstream curators and local users can edit independently and merge without conflict; value guards catch same-field edits before they silently overwrite.
 
-    - Architected and built a #strong[100K+ line SvelteKit\/Deno\/TypeScript\/SQLite app solo], including a Terraform-style sync engine (idempotent, retry-safe, with drift detection), a crash-recoverable job queue, and a fully type-safe data layer generated directly from the database schema and queried through Kysely.
+    - Architected and solo-built a #strong[100K+ line SvelteKit\/Deno\/TypeScript\/SQLite application] with a fully type-safe data layer generated from the database schema and queried through Kysely.
+
+    - Built a #strong[Terraform-style sync engine] — idempotent, retry-safe, with drift detection — backed by a crash-recoverable job queue.
 
     - Built a reusable #strong[component library] that leverages semantic CSS tokens to create a consistently styled, themable, and polished design, enabling rapid UI development. Enforced using custom Svelte-AST lint rules that ban raw HTML and hardcoded styles.
 
-    - Designed a #strong[defense-in-depth security model that keeps raw secrets off the web surface entirely] — authenticated or not: clients receive presence flags rather than values, the app's own API key is hashed like a password (shown once, never retrievable), and backup downloads are credential-stripped before reaching the browser, leaving the filesystem as the only trust boundary for full-fidelity data. Layered with independent OWASP Top 10 protections: sanitized markdown, path-traversal and reverse-proxy-aware CSRF handling, and persistent rate limiting.
+    - Designed a #strong[defense-in-depth security model that keeps raw secrets off the web surface entirely]: clients receive presence flags instead of values, API keys are hashed like passwords, and backups are credential-stripped before download. Hardened against OWASP Top 10 (sanitized markdown, CSRF, path-traversal, rate limiting).
 
     - Built a #strong[CI\/CD release pipeline] running build, lint, type checks, unit + integration tests against the production binary, Semgrep SAST, and Playwright E2E auth flows on every change.
 
