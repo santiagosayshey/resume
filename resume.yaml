@@ -58,11 +58,11 @@ cv:
           - Implemented design patterns (Factory, Observer, State) for extensible game object behavior.
     skills:
       - label: Languages
-        details: TypeScript, Python, C++, C#, SQL, HTML/CSS
+        details: TypeScript, JavaScript, Python, C++, C#, SQL, HTML/CSS
       - label: Technologies
-        details: SvelteKit, Deno, Docker, Git, Linux, SQLite, Kysely, Discord.js, FFmpeg
+        details: SvelteKit, Deno, SQLite, Kysely, Tailwind, Docker, GitHub Actions, Playwright, Semgrep, Git, Linux
       - label: Practices
-        details: GitOps, Event Sourcing, API Design, Open Source Development
+        details: CI/CD, Event Sourcing, Configuration-as-Code, Secure Development, Automated Testing, API Design, Open Source Development
       - label: Interests
         details: Self-Hosting, Homelabbing, Media Archival, Basketball, Technical Writing
 design:
